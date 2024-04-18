@@ -1,0 +1,11 @@
+Buildfile: C:\Users\onurb\Mendix\ECommerceApp\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 41 files to C:\Users\onurb\Mendix\ECommerceApp\deployment
+     [copy] Copying 26 files to C:\Users\onurb\Mendix\ECommerceApp\deployment\model\lib\userlib
+     [copy] Copying 5 files to C:\Users\onurb\Mendix\ECommerceApp\deployment\model\resources
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

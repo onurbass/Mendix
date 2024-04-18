@@ -1,0 +1,122 @@
+{
+  "RuntimeVersion": "9.6.2.30227",
+  "ProjectID": "5f29f5ce-af62-45ca-bdc8-915abe965a5e",
+  "ProjectName": "ECommerceApp",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "6571b548-c726-4a7a-89d4-629d6e672d63"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "User"
+    },
+    "6571b548-c726-4a7a-89d4-629d6e672d63": {
+      "Name": "Anonymous"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "Anonymous.Email_Regex",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+    },
+    {
+      "Name": "AnyChart_BuildingBlocks.Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "3.0.2"
+    },
+    {
+      "Name": "Atlas_Core.Atlas_Core_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "3.0.7"
+    },
+    {
+      "Name": "Atlas_Web_Content.Atlas_Web_Content_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "3.0.6"
+    },
+    {
+      "Name": "DataWidgets.DataWidgets_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "2.0.0"
+    },
+    {
+      "Name": "ExcelImporter.EnableExternalEntities",
+      "Type": "Boolean",
+      "Description": "Enables the parsing of external entities from the DTD. This is turned off by default.",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "ExcelImporter.ParseEmptyCells",
+      "Type": "Boolean",
+      "Description": "Set this constant to True to allow parsing empty cells with microflow when importing Excel files.\r\n\r\nIf True, \"parse with\" microflow will be called for empty cells.\r\nIf False (default), the microflow will be called only for cells with data.",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "NanoflowCommons.Nanoflow_Commons_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "2.1.0"
+    },
+    {
+      "Name": "WebActions.WebActions_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "2.3.0"
+    }
+  ],
+  "ScheduledEvents": [],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/api-doc/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}
